@@ -1,12 +1,16 @@
 import React from 'react';
+import './Header.css';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
 
 const Header = () => {
     const menuItems = (
         <>
-            <li className='font-semibold'>
+            <li className='font-semibold text-gray-500'>
                 <Link to='/'>Home</Link>
+            </li>
+            <li className='font-semibold text-gray-500'>
+                <Link to='/about'>About</Link>
             </li>
         </>
     );
@@ -46,7 +50,7 @@ const Header = () => {
                 <ul className='menu menu-horizontal px-1'>{menuItems}</ul>
             </div>
             <div className='navbar-end'>
-                <button className='btn btn-outline btn-warning'>
+                <button className='my-2nd-btn btn btn-outline'>
                     APPOINTMENT
                 </button>
             </div>

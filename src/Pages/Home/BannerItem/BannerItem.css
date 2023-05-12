@@ -3,6 +3,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    border-radius: 12px;
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -11,4 +12,23 @@
         rgba(21, 21, 21, 0.9) 0%,
         rgba(21, 21, 21, 0) 100%
     );
+}
+/* Button Style */
+.my-btn {
+    background: #ff3811;
+    color: white;
+    border: 1px solid #ff3811;
+}
+.my-btn:hover {
+    background: transparent;
+    color: #ff3811;
+    border: 1px solid #ff3811;
+}
+.my-btn-2 {
+    color: white;
+}
+.my-btn-2:hover {
+    color: #ff3811;
+    background: transparent;
+    border: 1px solid #ff3811;
 }

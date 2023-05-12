@@ -1,0 +1,11 @@
+/* Button Style */
+.my-2nd-btn {
+    background: transparent;
+    color: #ff3811;
+    border: 1px solid #ff3811;
+}
+.my-2nd-btn:hover {
+    background: #ff3811;
+    color: white;
+    border: 1px solid #ff3811;
+}

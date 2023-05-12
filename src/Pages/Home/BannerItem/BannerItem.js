@@ -28,8 +28,8 @@ const BannerItem = ({ slide }) => {
                 </p>
             </div>
             <div className='absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24 top-3/4'>
-                <button className='btn btn-error mr-5'>Discover More</button>
-                <button className='btn btn-outline btn-error'>
+                <button className='my-btn btn mr-5'>Discover More</button>
+                <button className='my-btn-2 btn btn-outline'>
                     Latest Project
                 </button>
             </div>

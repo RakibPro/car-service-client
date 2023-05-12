@@ -1,0 +1,11 @@
+/* Button Style */
+.my-btn {
+    background: #ff3811;
+    color: white;
+    border: 1px solid #ff3811;
+}
+.my-btn:hover {
+    background: transparent;
+    color: #ff3811;
+    border: 1px solid #ff3811;
+}
