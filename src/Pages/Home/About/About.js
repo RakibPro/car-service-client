@@ -28,7 +28,7 @@ const About = () => {
                     </p>
                     <h1
                         className='text-5xl py-5 font-bold '
-                        style={{ color: '#151515' }}
+                        style={{ color: 'var(--title-color)' }}
                     >
                         We are qualified <br />
                         & of experience <br />

@@ -17,7 +17,7 @@ const Services = () => {
             </p>
             <h1
                 className='text-5xl py-5 font-bold'
-                style={{ color: '#151515' }}
+                style={{ color: 'var(--title-color)' }}
             >
                 Our Service Area
             </h1>
