@@ -2,7 +2,7 @@ import React from 'react';
 import loginImg from '../../assets/images/login/login.svg';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const SignUp = () => {
     const handleLogin = (e) => {
         e.preventDefault();
     };
@@ -19,9 +19,22 @@ const Login = () => {
                             className='text-5xl text-center font-bold'
                             style={{ color: 'var(--title-color)' }}
                         >
-                            Login
+                            Sign Up
                         </h1>
                         <form onSubmit={handleLogin} className='card-body'>
+                            <div className='form-control'>
+                                <label className='label'>
+                                    <span className='label-text font-bold'>
+                                        Name
+                                    </span>
+                                </label>
+                                <input
+                                    type='text'
+                                    name='name'
+                                    placeholder='Your Name'
+                                    className='input input-bordered'
+                                />
+                            </div>
                             <div className='form-control'>
                                 <label className='label'>
                                     <span className='label-text font-bold'>
@@ -38,7 +51,7 @@ const Login = () => {
                             <div className='form-control'>
                                 <label className='label'>
                                     <span className='label-text font-bold'>
-                                        Password
+                                        Confirm Password
                                     </span>
                                 </label>
                                 <input
@@ -60,17 +73,17 @@ const Login = () => {
                                 <input
                                     className='my-btn btn'
                                     type='submit'
-                                    value='Login'
+                                    value='singup'
                                 />
                             </div>
                         </form>
                         <p className='text-center'>
-                            New to Car Doctor?{' '}
+                            Already have an account?{' '}
                             <Link
-                                to='/signup'
+                                to='/login'
                                 style={{ color: 'var(--primary-color)' }}
                             >
-                                SignUp
+                                Login
                             </Link>
                         </p>
                     </div>
@@ -80,4 +93,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default SignUp;

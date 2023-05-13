@@ -12,6 +12,9 @@ const Header = () => {
             <li className='font-semibold text-gray-500'>
                 <Link to='/about'>About</Link>
             </li>
+            <li className='font-semibold text-gray-500'>
+                <Link to='/login'>Login</Link>
+            </li>
         </>
     );
 
