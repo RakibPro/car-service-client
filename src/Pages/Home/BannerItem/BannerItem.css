@@ -14,21 +14,11 @@
     );
 }
 /* Button Style */
-.my-btn {
-    background: #ff3811;
-    color: white;
-    border: 1px solid #ff3811;
-}
-.my-btn:hover {
-    background: transparent;
-    color: #ff3811;
-    border: 1px solid #ff3811;
-}
 .my-btn-2 {
     color: white;
 }
 .my-btn-2:hover {
-    color: #ff3811;
+    color: var(--primary-color);
     background: transparent;
-    border: 1px solid #ff3811;
+    border: 1px solid var(--primary-color);
 }

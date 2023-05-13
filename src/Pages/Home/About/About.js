@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
-import person from '../../assets/images/about_us/person.jpg';
-import parts from '../../assets/images/about_us/parts.jpg';
+import person from '../../../assets/images/about_us/person.jpg';
+import parts from '../../../assets/images/about_us/parts.jpg';
 
 const About = () => {
     return (
@@ -26,7 +26,10 @@ const About = () => {
                     >
                         About Us
                     </p>
-                    <h1 className='text-5xl py-5 font-bold text-black'>
+                    <h1
+                        className='text-5xl py-5 font-bold '
+                        style={{ color: '#151515' }}
+                    >
                         We are qualified <br />
                         & of experience <br />
                         in this field
