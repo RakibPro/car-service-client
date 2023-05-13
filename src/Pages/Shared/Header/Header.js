@@ -6,13 +6,13 @@ import logo from '../../../assets/logo.svg';
 const Header = () => {
     const menuItems = (
         <>
-            <li className='font-semibold text-gray-500'>
+            <li className='font-semibold text-gray-500 pe-3'>
                 <Link to='/'>Home</Link>
             </li>
-            <li className='font-semibold text-gray-500'>
+            <li className='font-semibold text-gray-500 pe-3'>
                 <Link to='/about'>About</Link>
             </li>
-            <li className='font-semibold text-gray-500'>
+            <li className='font-semibold text-gray-500 pe-3'>
                 <Link to='/login'>Login</Link>
             </li>
         </>
