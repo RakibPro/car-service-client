@@ -55,7 +55,7 @@ const Login = () => {
                                     </span>
                                 </label>
                                 <input
-                                    type='text'
+                                    type='password'
                                     name='password'
                                     placeholder='Your Password'
                                     className='input input-bordered'

@@ -13,6 +13,12 @@ const Header = () => {
                 <Link to='/about'>About</Link>
             </li>
             <li className='font-semibold text-gray-500 pe-3'>
+                <Link to='/services'>Services</Link>
+            </li>
+            <li className='font-semibold text-gray-500 pe-3'>
+                <Link to='/orders'>Orders</Link>
+            </li>
+            <li className='font-semibold text-gray-500 pe-3'>
                 <Link to='/login'>Login</Link>
             </li>
         </>
