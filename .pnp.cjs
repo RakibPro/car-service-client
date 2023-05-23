@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-router-dom", "virtual:9f0a0c6afb8ab62cac59eef86f37df574b3ec18c987b3ae444e2bb54198e867c4d3ac2cef02b52764817b8b89e186454b4fe3df4a4f932e998d562afa3242cbe#npm:6.11.1"],\
             ["react-scripts", "virtual:9f0a0c6afb8ab62cac59eef86f37df574b3ec18c987b3ae444e2bb54198e867c4d3ac2cef02b52764817b8b89e186454b4fe3df4a4f932e998d562afa3242cbe#npm:5.0.1"],\
             ["react-toastify", "virtual:9f0a0c6afb8ab62cac59eef86f37df574b3ec18c987b3ae444e2bb54198e867c4d3ac2cef02b52764817b8b89e186454b4fe3df4a4f932e998d562afa3242cbe#npm:9.1.3"],\
+            ["sweetalert2", "npm:11.7.5"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -7647,6 +7648,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-router-dom", "virtual:9f0a0c6afb8ab62cac59eef86f37df574b3ec18c987b3ae444e2bb54198e867c4d3ac2cef02b52764817b8b89e186454b4fe3df4a4f932e998d562afa3242cbe#npm:6.11.1"],\
             ["react-scripts", "virtual:9f0a0c6afb8ab62cac59eef86f37df574b3ec18c987b3ae444e2bb54198e867c4d3ac2cef02b52764817b8b89e186454b4fe3df4a4f932e998d562afa3242cbe#npm:5.0.1"],\
             ["react-toastify", "virtual:9f0a0c6afb8ab62cac59eef86f37df574b3ec18c987b3ae444e2bb54198e867c4d3ac2cef02b52764817b8b89e186454b4fe3df4a4f932e998d562afa3242cbe#npm:9.1.3"],\
+            ["sweetalert2", "npm:11.7.5"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -18054,6 +18056,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["csso", "npm:4.2.0"],\
             ["picocolors", "npm:1.0.0"],\
             ["stable", "npm:0.1.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["sweetalert2", [\
+        ["npm:11.7.5", {\
+          "packageLocation": "./.yarn/cache/sweetalert2-npm-11.7.5-953ed436ee-c1c1a4a7c8.zip/node_modules/sweetalert2/",\
+          "packageDependencies": [\
+            ["sweetalert2", "npm:11.7.5"]\
           ],\
           "linkType": "HARD"\
         }]\

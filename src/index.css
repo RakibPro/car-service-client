@@ -6,6 +6,7 @@
 :root {
     --primary-color: #ff3811;
     --title-color: #151515;
+    --gray-color: #6b7280;
 }
 body {
     margin: 0;

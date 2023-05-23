@@ -1,0 +1,22 @@
+/* Login Button Style */
+.login-btn {
+    background: transparent;
+    color: #ff3811;
+    border: 1px solid #ff3811;
+}
+.login-btn:hover {
+    background: #04e762;
+    color: black;
+    border: 1px solid #04e762;
+}
+/* Logout Button Style */
+.logout-btn {
+    background: transparent;
+    color: #ff3811;
+    border: 1px solid #ff3811;
+}
+.logout-btn:hover {
+    background: red;
+    color: white;
+    border: 1px solid red;
+}

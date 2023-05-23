@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
+import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
 
 const Header = () => {
+    const { user, logOut } = useContext(AuthContext);
     const menuItems = (
         <>
             <li className='font-semibold text-gray-500 pe-3'>
@@ -17,9 +19,6 @@ const Header = () => {
             </li>
             <li className='font-semibold text-gray-500 pe-3'>
                 <Link to='/orders'>Orders</Link>
-            </li>
-            <li className='font-semibold text-gray-500 pe-3'>
-                <Link to='/login'>Login</Link>
             </li>
         </>
     );
@@ -59,9 +58,18 @@ const Header = () => {
                 <ul className='menu menu-horizontal px-1'>{menuItems}</ul>
             </div>
             <div className='navbar-end'>
-                <button className='my-2nd-btn btn btn-outline'>
-                    APPOINTMENT
-                </button>
+                {user?.email ? (
+                    <button
+                        onClick={() => logOut()}
+                        className='logout-btn btn btn-outline'
+                    >
+                        logout
+                    </button>
+                ) : (
+                    <button className='login-btn btn btn-outline'>
+                        <Link to='/login'>Login</Link>
+                    </button>
+                )}
             </div>
         </div>
     );

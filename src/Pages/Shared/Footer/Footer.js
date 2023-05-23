@@ -4,15 +4,17 @@ import logo from '../../../assets/logo.svg';
 const Footer = () => {
     return (
         <footer
-            className='footer p-10 w-full text-white '
+            className='footer p-10 w-full text-white'
             style={{ background: 'var(--title-color)' }}
         >
             <div>
                 <img src={logo} alt='logo' />
                 <p>
-                    ACME Industries Ltd.
+                    Car Doctor Ltd.
                     <br />
-                    Providing reliable tech since 1992
+                    Providing Reliable Car Service 1992
+                    <br />
+                    &copy; Copyright 2023
                 </p>
             </div>
             <div>
