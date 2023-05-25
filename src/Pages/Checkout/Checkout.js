@@ -26,7 +26,7 @@ const Checkout = () => {
             message,
         };
 
-        if (phone.length < 11) {
+        if (phone.length < 4) {
             toast.error(
                 'Phone number must be contained 11 character or longer',
                 {

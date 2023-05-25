@@ -4,15 +4,28 @@ import OrderRow from './OrderRow';
 import Swal from 'sweetalert2';
 
 const Orders = () => {
-    const { user } = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
     const [orders, setOrders] = useState([]);
     console.log(orders);
 
     useEffect(() => {
         const url = `http://localhost:5000/orders?email=${user?.email}`;
-        fetch(url)
-            .then((res) => res.json())
-            .then((data) => setOrders(data));
+        fetch(url, {
+            headers: {
+                authorization: `Bearer ${localStorage.getItem(
+                    'carservice-token'
+                )}`,
+            },
+        })
+            .then((res) => {
+                if (res.status === 401 || res.status === 403) {
+                    logOut();
+                }
+                return res.json();
+            })
+            .then((data) => {
+                setOrders(data);
+            });
     }, [user?.email]);
 
     const handleUpdate = (id) => {

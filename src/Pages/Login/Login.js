@@ -19,7 +19,25 @@ const Login = () => {
         loginUser(email, password)
             .then((result) => {
                 const user = result.user;
-                navigate(from, { replace: true });
+                const currentUser = {
+                    email: user.email,
+                };
+
+                // Get JWT Token
+                const url = 'http://localhost:5000/jwt';
+                fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(currentUser),
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        console.log('Success:', data);
+                        localStorage.setItem('carservice-token', data.token);
+                        navigate(from, { replace: true });
+                    });
             })
             .catch((err) => console.error(err))
             .finally(() => {
