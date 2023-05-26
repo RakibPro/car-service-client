@@ -14,7 +14,7 @@ const OrderRow = ({ order, handleDelete, handleUpdate }) => {
     const [orderService, setOrderService] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/services/${service}`;
+        const url = `https://car-service-server-ebon.vercel.app/services/${service}`;
         fetch(url)
             .then((res) => res.json())
             .then((data) => setOrderService(data));

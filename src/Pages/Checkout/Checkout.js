@@ -41,7 +41,7 @@ const Checkout = () => {
                 }
             );
         } else {
-            const url = 'http://localhost:5000/orders';
+            const url = 'https://car-service-server-ebon.vercel.app/orders';
             fetch(url, {
                 method: 'POST',
                 headers: {

@@ -24,7 +24,7 @@ const Login = () => {
                 };
 
                 // Get JWT Token
-                const url = 'http://localhost:5000/jwt';
+                const url = 'https://car-service-server-ebon.vercel.app/jwt';
                 fetch(url, {
                     method: 'POST',
                     headers: {

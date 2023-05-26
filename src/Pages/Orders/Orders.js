@@ -9,7 +9,7 @@ const Orders = () => {
     console.log(orders);
 
     useEffect(() => {
-        const url = `http://localhost:5000/orders?email=${user?.email}`;
+        const url = `https://car-service-server-ebon.vercel.app/orders?email=${user?.email}`;
         fetch(url, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem(
@@ -29,7 +29,7 @@ const Orders = () => {
     }, [user?.email]);
 
     const handleUpdate = (id) => {
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://car-service-server-ebon.vercel.app/orders/${id}`;
         fetch(url, {
             method: 'PATCH',
             headers: {
@@ -61,7 +61,7 @@ const Orders = () => {
             confirmButtonText: 'Delete Order',
         }).then((result) => {
             if (result.isConfirmed) {
-                const url = `http://localhost:5000/orders/${id}`;
+                const url = `https://car-service-server-ebon.vercel.app/orders/${id}`;
                 fetch(url, {
                     method: 'DELETE',
                 })
